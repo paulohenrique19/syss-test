@@ -43,3 +43,5 @@ DELETE: http://localhost:(porta)/id             (Deleta os dados de um funcioná
 ==>      A autenticação não deu certo, o Postman não deixava as operações POST, PUT(UPDATE) e DELETE serem realizadas, por conta disso, criei uma classe em **/syssemployeesystem/src/main/java/com/syss/syssemployessystem/config/EmployeeConfig.java** que desabilita o CSRF e permite novamente que essas operações sejam realizadas. Quando executar o programa, o terminal retornará uma senha para a autenticação para um usuário padrão "user", mas ela não será necessária.
 
 
+
+============================================================================
