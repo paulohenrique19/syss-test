@@ -40,7 +40,7 @@ DELETE: http://localhost:(porta)/id             (Deleta os dados de um funcioná
 ==>      Infelizmente, devido a alguns erros, certas requisições não puderam ser implementadas, como a busca por maior/menor idade e salário, pois os métodos sempre retornavam erro 400 no Postman. Tentei implementar no Swagger(http://localhost:8080/swagger-ui/index.html#/), porém estão funcionando apenas as operações GET e POST.
 
 
-==>      A autenticação não deu certo, o Postman não deixava as operações POST, PUT(UPDATE) e DELETE serem realizadas, por conta disso, criei uma classe em **/syssemployeesystem/src/main/java/com/syss/syssemployessystem/config/EmployeeConfig.java** que desabilita o CSRF e permite novamente que essas operações sejam realizadas. Quando executar o programa, o terminal retornará uma senha para a autenticação para um usuário padrão "user", mas ela não será necessária.
+==>      A autenticação não deu certo, o Postman não deixava as operações POST, PUT(UPDATE) e DELETE serem realizadas(retornando erro 403), por conta disso, criei uma classe em **/syssemployeesystem/src/main/java/com/syss/syssemployessystem/config/EmployeeConfig.java** que desabilita o CSRF e permite novamente que essas operações sejam realizadas. Quando executar o programa, o terminal retornará uma senha para a autenticação para um usuário padrão "user", mas ela não será necessária.
 
 
 =========================================================================================================
